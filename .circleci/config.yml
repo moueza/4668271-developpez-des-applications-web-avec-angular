@@ -35,3 +35,19 @@ jobs:
 
       # run tests!
       - run: yarn test
+      
+  #https://circleci.com/docs/2.0/workflows/#workflows-configuration-examples    
+  test:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: <command>
+
+#https://circleci.com/docs/2.0/workflows/#workflows-configuration-examples
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
