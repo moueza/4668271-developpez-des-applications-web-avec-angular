@@ -32,7 +32,13 @@ jobs:
       - run: echo "coucou"
       - run: ls
       - run: pwd
+      
+       #wget vs
+      - run: curl http://localhost/index.html
+      
       - run: cd bookshelves ; ls ; ng serve
+      
+     
       
 
 
