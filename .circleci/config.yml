@@ -32,6 +32,9 @@ jobs:
       - run: sudo npm install -g @angular/cli > /dev/null --save
       - run: sudo npm install  @angular/cli > /dev/null --save
       
+      - run: sudo npm install -g --save @angular/compiler  > /dev/null
+      - run: sudo npm install --save @angular/compiler  > /dev/null 
+
       - run: sudo npm install -g @angular-devkit/build-angular
       - run: sudo npm install @angular-devkit/build-angular
       
