@@ -22,7 +22,7 @@ jobs:
       # Download and cache dependencies
     
       - run: sudo npm install
-
+      - run: sudo npm install -g @angular/cli
       - run: cd bookshelves
       
       - run: ng serve
