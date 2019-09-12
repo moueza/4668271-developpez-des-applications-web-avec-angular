@@ -7,7 +7,11 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/httpd:2.4.41-alpine
+      - image: circleci/php:7.2-apache-browsers
+        environment:
+          DB_STRING:                  mysql:host=127.0.0.1;dbname=eoo_test
+          DB_USER:                    root
+          DB_PASSWORD:                test
       - image: circleci/node:lts
 
       # Specify service dependencies here if necessary
