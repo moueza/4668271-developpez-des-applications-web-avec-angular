@@ -26,7 +26,7 @@ jobs:
       - run: echo "coucou"
       - run: ls
       - run: pwd
-      - run: ls ; cd bookshelves ; ls ; ng serve
+      - run: cd bookshelves ; ls ; ng serve
       
 
 
