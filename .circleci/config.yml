@@ -23,9 +23,9 @@ jobs:
     
       - run: sudo npm install
       - run: sudo npm install -g @angular/cli > /dev/null
-      - run: cd bookshelves
+      - run: cd bookshelves ; ng serve
       
-      - run: ng serve
+
 
       # run tests!
       #- run: yarn test
