@@ -21,7 +21,7 @@ jobs:
 
       # Download and cache dependencies
     
-      - run: sudo npm install -g angular
+      - run: sudo npm install -g @angular/cli
 
       - run: ng serve
 
