@@ -6,7 +6,8 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
+      # specify the version you desire here 
+      #https://discuss.circleci.com/t/php-apache-selenium-apachephp-does-not-get-environment-vars/2618
       - image: circleci/php:7.2-apache-browsers
         environment:
           DB_STRING:                  mysql:host=127.0.0.1;dbname=eoo_test
