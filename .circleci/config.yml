@@ -23,10 +23,12 @@ jobs:
     
       - run: sudo npm install -g @angular/cli
 
+      - run: cd bookshelves
+      
       - run: ng serve
 
       # run tests!
-      - run: yarn test
+      #- run: yarn test
       
   #https://circleci.com/docs/2.0/workflows/#workflows-configuration-examples    
   test:
@@ -34,8 +36,9 @@ jobs:
       - image: circleci/<language>:<version TAG>
     steps:
       - checkout
-      - run: <command>
+      - run: sudo npm install -g @angular/cli
 
+      - run: ng serve
 #https://circleci.com/docs/2.0/workflows/#workflows-configuration-examples
 workflows:
   version: 2
