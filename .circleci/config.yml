@@ -24,6 +24,10 @@ jobs:
       - run: sudo npm install
       - run: sudo npm install -g @angular/cli > /dev/null --save
       - run: sudo npm install  @angular/cli > /dev/null --save
+      
+      - run: sudo npm install -g @angular-devkit/build-angular
+      - run: sudo npm install @angular-devkit/build-angular
+            
       - run: sudo npm install
       - run: echo "coucou"
       - run: ls
