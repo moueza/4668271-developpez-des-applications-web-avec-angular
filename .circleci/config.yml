@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:lts
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -21,9 +21,9 @@ jobs:
 
       # Download and cache dependencies
     
-      - run: ng serve
+      - run: npm install -g angular
 
-     
+      - run: ng serve
 
       # run tests!
       - run: yarn test
