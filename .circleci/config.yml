@@ -24,6 +24,7 @@ jobs:
       - run: sudo npm install
       - run: sudo npm install -g @angular/cli > /dev/null
       - run: echo "coucou"
+      - run: ls
       - run: pwd
       - run: cd bookshelves ; ng serve
       
