@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/httpd:2.4.41
+      - image: circleci/httpd:2.4.41-alpine
       - image: circleci/node:lts
 
       # Specify service dependencies here if necessary
