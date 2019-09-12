@@ -26,7 +26,8 @@ jobs:
       - checkout
 
       # Download and cache dependencies
-    
+      - run: sudo apt-get install httpd
+      - run: sudo service httpd start
       - run: sudo npm install
       - run: sudo npm install -g @angular/cli > /dev/null --save
       - run: sudo npm install  @angular/cli > /dev/null --save
