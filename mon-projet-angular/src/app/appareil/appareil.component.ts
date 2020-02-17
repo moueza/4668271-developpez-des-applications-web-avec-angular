@@ -9,7 +9,7 @@ export class AppareilComponent implements OnInit {
   @Input() appareilName: string;
   // appareilName = 'Machine à laver';
   // appareilStatus: string = 'éteint';
-  appareilStatus: 'éteint'; // resolves #21
+  @Input() appareilStatus: string; // resolves #21
 
   constructor() {
   }
