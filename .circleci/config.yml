@@ -51,7 +51,7 @@ jobs:
       - run: sudo npm install -g @angular/compiler-cli > /dev/null --save
       - run: sudo npm install  @angular/compiler-cli > /dev/null --save
       
-      - run: cd bookshelves ; ls ; ng serve
+      - run: cd mon-projet-angular ; ls ; ng serve
       
      
       
