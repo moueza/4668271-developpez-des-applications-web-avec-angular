@@ -57,11 +57,13 @@ jobs:
       - run: sudo npm install     @angular/common > /dev/null --save
    
         
+     - run: sudo npm install zone.js
+
   
-      - run: ls
-      - run: cd mon-projet-angular ; ng serve
+    - run: ls
+    - run: cd mon-projet-angular ; ng serve
       
-     
+      
       
 
 
