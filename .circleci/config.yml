@@ -54,9 +54,10 @@ jobs:
       - run: sudo npm install     @angular/platform-browser > /dev/null --save
       - run: sudo npm install @angular/forms > /dev/null --save   
       - run: sudo npm install   @angular/platform-browser-dynamic > /dev/null --save
+      - run: sudo npm install     @angular/common > /dev/null --save
+   
         
-        
-    
+  
       - run: ls
       - run: cd mon-projet-angular ; ng serve
       
