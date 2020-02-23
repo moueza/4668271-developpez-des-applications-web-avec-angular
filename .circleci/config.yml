@@ -66,11 +66,10 @@ jobs:
       - run: sudo npm install   -g  @angular/common > /dev/null --save    
       
       - run: sudo npm install zone.js
-      - run: sudo npm install -g zone.js
-
-  
-    - run: ls
-    - run: cd mon-projet-angular ; ng serve
+      - run: sudo npm install -g zone.js 
+      
+      - run: ls
+      - run: cd mon-projet-angular ; ng serve
       
       
       
